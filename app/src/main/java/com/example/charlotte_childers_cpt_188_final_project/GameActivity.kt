@@ -109,6 +109,7 @@ class GameActivity : AppCompatActivity() {
                 disableBoxes()
                 startNewGameButton.visibility = View.VISIBLE
                 showWinner(winningLine)
+                Toast.makeText(this, "Player ${gameManager.currentPlayerMark} wins!", Toast.LENGTH_LONG).show()
                 // If the game is a draw, show a message and disable the boxes
             }
             else if(gameManager.isDraw()) { // If the game is a draw, show a message and disable the boxes
